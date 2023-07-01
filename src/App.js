@@ -1,7 +1,27 @@
 import "./App.css";
 
 function App() {
-  return <div className="App">Weather App</div>;
+  return (
+    <div className="App">
+      <h1>Weather App</h1>
+      <footer>
+        This project is created by Maryam{" "}
+        <a
+          href="https://www.linkedin.com/in/maryamalizadeh91/"
+          target="_blank"
+          rel="noreferrer">
+          M.Alizadeh
+        </a>{" "}
+        and is{" "}
+        <a
+          href="https://github.com/maryamalizadeh91/react-weather-week5"
+          target="_blank"
+          rel="noreferrer">
+          open-sourced on GitHub
+        </a>
+      </footer>
+    </div>
+  );
 }
 
 export default App;
