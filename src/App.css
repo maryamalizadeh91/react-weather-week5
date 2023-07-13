@@ -1,6 +1,20 @@
 .App {
+  background-image: url("../public/images/clear-sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.App .app-container {
+  position: relative;
+  top: 25%;
+  background-color: white;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
 }
 
 .App h1 {
