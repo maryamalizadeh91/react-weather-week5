@@ -9,7 +9,7 @@ function WeatherInfo(props) {
 
   useEffect(() => {
     setTheme(props.data.icon);
-  }, [props]);
+  });
 
   return (
     <div className="WeatherInfo">
