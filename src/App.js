@@ -1,32 +1,16 @@
 import "./App.css";
-import React from "react";
-import Weather from "./Weather";
+import React, { useState, useContext } from "react";
+import AppContainer from "./AppContainer";
+import { ThemeContext } from "./ThemeContext";
 
 function App() {
+  const [theme, setTheme] = useState("clear-sky-day");
+  const value = { theme, setTheme };
   return (
     <div className="App">
-      <div className="app-container align-middle">
-        <div className="container">
-          <h1>Weather App</h1>
-          <Weather defaultCity="Tabriz" />
-          <footer>
-            This project is created by Maryam{" "}
-            <a
-              href="https://www.linkedin.com/in/maryamalizadeh91/"
-              target="_blank"
-              rel="noreferrer">
-              M.Alizadeh
-            </a>{" "}
-            and is{" "}
-            <a
-              href="https://github.com/maryamalizadeh91/react-weather-week5"
-              target="_blank"
-              rel="noreferrer">
-              open-sourced on GitHub
-            </a>
-          </footer>
-        </div>
-      </div>
+      <ThemeContext.Provider value={value}>
+        <AppContainer />
+      </ThemeContext.Provider>
     </div>
   );
 }

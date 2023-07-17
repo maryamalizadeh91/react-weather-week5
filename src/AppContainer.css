@@ -1,0 +1,94 @@
+.AppContainer {
+  display: flex;
+}
+
+.AppContainer .clear-sky-day,
+.AppContainer .clear-sky-night,
+.AppContainer .few-clouds-day,
+.AppContainer .few-clouds-night,
+.AppContainer .scattered-clouds-day,
+.AppContainer .scattered-clouds-night,
+.AppContainer .broken-clouds-day,
+.AppContainer .broken-clouds-night,
+.AppContainer .shower-rain-day,
+.AppContainer .shower-rain-night,
+.AppContainer .rain-day,
+.AppContainer .rain-night,
+.AppContainer .thunderstorm-day,
+.AppContainer .thunderstorm-night,
+.AppContainer .snow-day,
+.AppContainer .snow-night,
+.AppContainer .mist-day,
+.AppContainer .mist-night {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.AppContainer .clear-sky-day {
+  background-image: url("../public/images/clear-sky-day.jpg");
+}
+
+.AppContainer .clear-sky-night {
+  background-image: url("../public/images/clear-sky-night.jpg");
+}
+
+.AppContainer .few-clouds-day,
+.AppContainer .scattered-clouds-day,
+.AppContainer .broken-clouds-day {
+  background-image: url("../public/images/cloudy-day.jpg");
+}
+
+.AppContainer .few-clouds-night,
+.AppContainer .scattered-clouds-night,
+.AppContainer .broken-clouds-night {
+  background-image: url("../public/images/cloudy-night.jpg");
+}
+
+.AppContainer .rain-day,
+.AppContainer .shower-rain-day {
+  background-image: url("../public/images/rainy-day.jpg");
+}
+
+.AppContainer .rain-night,
+.AppContainer .shower-rain-night {
+  background-image: url("../public/images/rainy-night.jpg");
+}
+
+.AppContainer .thunderstorm-day {
+  background-image: url("../public/images/thunderstorm-day.jpg");
+}
+
+.AppContainer .thunderstorm-night {
+  background-image: url("../public/images/thunderstorm-night.jpg");
+}
+
+.AppContainer .mist-day {
+  background-image: url("../public/images/foggy-day.jpg");
+}
+
+.AppContainer .mist-night {
+  background-image: url("../public/images/foggy-night.jpg");
+}
+
+.AppContainer .app-container {
+  position: relative;
+  top: 25%;
+  background-color: white;
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+
+.AppContainer h1 {
+  text-align: center;
+}
+
+.AppContainer footer {
+  font-size: 11px;
+  margin: 10px 0;
+}
