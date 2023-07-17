@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
@@ -6,7 +6,11 @@ import { ThemeContext } from "./ThemeContext";
 
 function WeatherInfo(props) {
   const { theme, setTheme } = useContext(ThemeContext);
-  setTheme(props.data.icon);
+
+  useEffect(() => {
+    setTheme(props.data.icon);
+  }, [props]);
+
   return (
     <div className="WeatherInfo">
       <h1>{props.data.city}</h1>
