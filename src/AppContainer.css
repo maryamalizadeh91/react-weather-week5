@@ -92,3 +92,11 @@
   font-size: 11px;
   margin: 10px 0;
 }
+
+@media (max-width: 600px) {
+  .AppContainer .app-container {
+    margin-right: 5px;
+    margin-left: 5px;
+    top: 20%;
+  }
+}

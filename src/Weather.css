@@ -56,3 +56,19 @@
 .Weather .unit a {
   text-decoration: none;
 }
+
+@media (max-width: 300px) {
+  .Weather .temperature {
+    font-size: 40px;
+  }
+
+  .Weather .unit {
+    font-size: 12px;
+    top: -25px;
+  }
+
+  .Weather .search-size {
+    font-size: 12px;
+    padding: 0;
+  }
+}
