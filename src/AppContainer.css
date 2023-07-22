@@ -75,7 +75,7 @@
 
 .AppContainer .app-container {
   position: relative;
-  top: 25%;
+  top: 20%;
   background-color: white;
   max-width: 600px;
   margin: 0px auto;
@@ -97,6 +97,6 @@
   .AppContainer .app-container {
     margin-right: 5px;
     margin-left: 5px;
-    top: 20%;
+    top: 10%;
   }
 }

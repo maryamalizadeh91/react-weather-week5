@@ -57,9 +57,14 @@
   text-decoration: none;
 }
 
+.Weather .forecast-title {
+  font-size: 24px;
+  margin: 10px 0px;
+}
+
 @media (max-width: 300px) {
   .Weather .temperature {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .Weather .unit {
@@ -70,5 +75,10 @@
   .Weather .search-size {
     font-size: 12px;
     padding: 0;
+  }
+
+  .Weather .forecast-title {
+    font-size: 16px;
+    margin: 10px 0px;
   }
 }

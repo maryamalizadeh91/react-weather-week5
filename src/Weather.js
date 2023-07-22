@@ -62,6 +62,7 @@ function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <div className="forecast-title">5 day forecast in celsius:</div>
         <WeatherForecast city={weatherData.city} />
       </div>
     );
