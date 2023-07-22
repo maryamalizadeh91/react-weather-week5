@@ -62,7 +62,7 @@ function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast city={city} />
+        <WeatherForecast city={weatherData.city} />
       </div>
     );
   } else {
